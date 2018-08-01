@@ -1,0 +1,30 @@
+{
+  "name": "dh-keys",
+  "version": "1.0.0",
+  "description": "dark hole - rsa lib",
+  "main": "dist/index.js",
+  "files": [
+    "dist/index.js"
+  ],
+  "author": "rabrux <rabrux@protonmail.com>",
+  "license": "MIT",
+  "private": false,
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "coffeescript": "^2.3.1",
+    "gulp": "^3.9.1",
+    "gulp-coffeescript": "^0.0.15",
+    "gulp-watch": "^5.0.1",
+    "mocha": "^5.2.0"
+  },
+  "dependencies": {
+    "node-rsa": "^1.0.0"
+  },
+  "scripts": {
+    "build": "node_modules/.bin/gulp",
+    "build:dev": "node_modules/.bin/gulp dev",
+    "test": "node_modules/.bin/mocha test/dist",
+    "prepublishOnly": "npm run build"
+  },
+  "repository": "https://github.com/rabrux/dh-keys.git"
+}
